@@ -68,17 +68,6 @@
     .step-num { color: #72823b; font-family: var(--serif); font-size: 15px; }
     .step h3 { margin: 0 0 6px; font-size: 15px; }
     .step p { margin: 0; color: #647184; font-size: 13px; line-height: 1.7; }
-    .booking { padding: 88px 0; background: #eaf0e8; }
-    .booking-inner { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: start; }
-    .booking h2 { max-width: 460px; }
-    .booking-copy { max-width: 440px; color: var(--muted); font-size: 14px; line-height: 1.8; }
-    .booking-form { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 26px; border: 1px solid #ccd6ca; background: var(--white); }
-    .booking-form label { display: grid; gap: 8px; color: #394656; font-size: 12px; font-weight: 650; }
-    .booking-form input, .booking-form select { width: 100%; min-height: 46px; padding: 0 12px; border: 1px solid #cbd1ce; border-radius: 4px; background: var(--white); color: var(--ink); font: inherit; }
-    .booking-form .full-width { grid-column: 1 / -1; }
-    .booking-form .button { cursor: pointer; }
-    .booking-note { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
-    .booking-status { min-height: 1.5em; margin: 0; color: #394656; font-size: 12px; }
     .contact { padding: 92px 0; background: var(--navy); color: var(--white); text-align: center; }
     .contact .eyebrow { justify-content: center; }
     .contact h2 { max-width: 650px; margin: 17px auto; font-size: clamp(40px, 6vw, 64px); }
@@ -99,14 +88,12 @@
       .strip-inner { align-items: flex-start; flex-direction: column; gap: 15px; }
       .principles { gap: 12px 20px; }
       section.content { padding: 74px 0; }
-      .section-head, .approach-grid, .booking-inner { grid-template-columns: 1fr; gap: 22px; }
+      .section-head, .approach-grid { grid-template-columns: 1fr; gap: 22px; }
       .section-head { margin-bottom: 30px; }
       .cards { grid-template-columns: 1fr; }
       .card { min-height: auto; }
       .card h3 { margin-top: 25px; }
-      .approach, .booking { padding: 68px 0; }
-      .booking-form { grid-template-columns: 1fr; padding: 20px; }
-      .booking-form .full-width { grid-column: auto; }
+      .approach { padding: 68px 0; }
       .contact { padding: 70px 0; }
       .footer-inner { align-items: flex-start; flex-direction: column; gap: 8px; }
     }
@@ -119,7 +106,7 @@
     <nav aria-label="Main navigation">
       <a href="#services">What we do</a>
       <a href="#approach">Our approach</a>
-      <a class="nav-cta" href="#booking">Book a conversation <span aria-hidden="true">↗</span></a>
+      <a class="nav-cta" href="https://bookings.cloud.microsoft/bookwithme/user/5ce268172e5d409aa9898f96250346c8@epam.com/meetingtype/NI_NkPVQWEePG9_e3OfbxA2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" rel="noopener noreferrer">Book a conversation <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
   <main id="top">
@@ -129,7 +116,7 @@
         <h1>Make technology<br>work <em>for you.</em></h1>
         <p class="hero-copy">Clear thinking. Thoughtful engineering. Practical outcomes. We help ambitious teams turn complex technology challenges into their next advantage.</p>
         <div class="actions">
-          <a class="button" href="#booking">Book a conversation <span aria-hidden="true">&nbsp;↗</span></a>
+          <a class="button" href="https://bookings.cloud.microsoft/bookwithme/user/5ce268172e5d409aa9898f96250346c8@epam.com/meetingtype/NI_NkPVQWEePG9_e3OfbxA2?anonymous&ismsaljsauthenabled&ep=mlink" target="_blank" rel="noopener noreferrer">Book a conversation <span aria-hidden="true">&nbsp;↗</span></a>
           <a class="text-link" href="#services">Discover how we help <span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-note">Strategy to delivery, without the noise.</div>
@@ -164,33 +151,6 @@
         </div>
       </div>
     </section>
-    <section class="booking" id="booking">
-      <div class="wrap booking-inner">
-        <div>
-          <div class="section-kicker">Make time to talk</div>
-          <h2>Let’s find a time.</h2>
-          <p class="booking-copy">Choose a date and time to propose for a 30-minute conversation. Outlook will open with an invitation addressed to Devereaux for you to review and send.</p>
-        </div>
-        <form class="booking-form" id="booking-form">
-          <label>Date
-            <input id="booking-date" name="date" type="date" required>
-          </label>
-          <label>Start time
-            <input id="booking-time" name="time" type="time" required>
-          </label>
-          <label class="full-width">Duration
-            <select id="booking-duration" name="duration">
-              <option value="30">30 minutes</option>
-              <option value="45">45 minutes</option>
-              <option value="60">60 minutes</option>
-            </select>
-          </label>
-          <button class="button full-width" type="submit">Continue in Outlook <span aria-hidden="true">&nbsp;↗</span></button>
-          <p class="booking-note full-width">This proposes a time; it does not check calendar availability or confirm the appointment. Times use your device’s local time zone.</p>
-          <p class="booking-status full-width" id="booking-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
     <section class="contact" id="contact">
       <div class="wrap">
         <div class="eyebrow">Start with a conversation</div>
@@ -201,30 +161,5 @@
     </section>
   </main>
   <footer><div class="wrap footer-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">D</span>Devereaux</a><span>© <span id="year">2026</span> Devereaux · Technology, made purposeful.</span></div></footer>
-  <script>
-    const bookingDate = document.getElementById("booking-date");
-    const localToday = new Date();
-    bookingDate.min = [localToday.getFullYear(), String(localToday.getMonth() + 1).padStart(2, "0"), String(localToday.getDate()).padStart(2, "0")].join("-");
-
-    document.getElementById("booking-form").addEventListener("submit", (event) => {
-      event.preventDefault();
-      const start = new Date(`${bookingDate.value}T${document.getElementById("booking-time").value}`);
-      if (Number.isNaN(start.getTime()) || start <= new Date()) {
-        document.getElementById("booking-status").textContent = "Choose a future date and time.";
-        return;
-      }
-
-      const end = new Date(start.getTime() + Number(document.getElementById("booking-duration").value) * 60_000);
-      const outlookUrl = new URL("https://outlook.office.com/calendar/0/deeplink/compose");
-      outlookUrl.search = new URLSearchParams({
-        subject: "Technology consulting conversation",
-        startdt: start.toISOString(),
-        enddt: end.toISOString(),
-        to: "christopher_Devereaux@epam.com",
-        body: "I would like to discuss a technology consulting conversation. Please let me know if this time works for you."
-      });
-      window.location.assign(outlookUrl.toString());
-    });
-  </script>
 </body>
 </html>
